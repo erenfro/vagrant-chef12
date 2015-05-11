@@ -1,0 +1,10 @@
+.vagrant/*
+.chef/*
+Chef/*
+
+secrets/*
+!secrets/README.md
+
+rpms/*
+!rpms/README.md
+
