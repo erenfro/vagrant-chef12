@@ -93,6 +93,10 @@ service docker start
 EOF
 
 
+unless Vagrant.has_plugin?("vagrant-hosts")
+    raise 'Plugin not installed and required: vagrant-hosts'
+end
+
 VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.ssh.forward_agent = true
